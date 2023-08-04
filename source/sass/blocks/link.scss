@@ -1,0 +1,42 @@
+.link {
+  &--light{
+    color: $color-default-white;
+
+    &:hover,
+    &:focus {
+      color: #1C3374;
+    }
+
+    &:active {
+      color: #0266C1;
+    }
+
+    &:disabled {
+      color: rgba(255, 255, 255, 0.10);
+    }
+  }
+
+  &--dark {
+    color: $color-elephant;
+
+    &:hover,
+    &:focus {
+      color: #1C3374;
+    }
+
+    &:active {
+      color: #0266C1;
+    }
+
+    &:disabled {
+      color: rgba(2, 102, 193, 0.10);
+    }
+  }
+}
+
+
+
+
+
+
+

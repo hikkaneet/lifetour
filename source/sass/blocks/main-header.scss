@@ -1,0 +1,162 @@
+.main-header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 9%;
+
+  @media (max-width: $bp-tablet-only) {
+    padding: 30px 6%;
+    position: relative;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 15px 5%;
+  }
+
+  &--no-js {
+    & button {
+      visibility: hidden;
+    }
+
+    & .main-header__logo {
+      z-index: 2;
+
+      & svg {
+        fill: $color-elephant;
+      }
+    }
+
+    & .main-header__phone {
+      color: $color-elephant;
+      z-index: 2;
+    }
+  }
+
+  &--opened {
+    & button {
+      z-index: 2;
+    }
+
+    & .main-header__logo {
+      z-index: 2;
+
+      & svg {
+        fill: $color-elephant;
+      }
+    }
+
+    & .main-header__phone {
+      color: $color-elephant;
+      z-index: 2;
+    }
+  }
+}
+
+.main-header__menu-toggle {
+  border: 0;
+  background: 0;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: $bp-tablet-only) {
+    display: block;
+  }
+
+  & .main-header__icon-menu svg {
+    &:hover,
+    &:focus {
+      fill: #1C3374;
+    }
+
+    &:active {
+      fill: #0266C1;
+    }
+
+    &:disabled {
+      fill: rgba(255, 255, 255, 0.10);
+    }
+  }
+
+  & .main-header__icon-cross svg {
+    &:hover,
+    &:focus {
+      stroke: #1C3374;
+    }
+
+    &:active {
+      stroke: #0266C1;
+    }
+
+    &:disabled {
+      stroke: rgba(2, 102, 193, 0.10);
+    }
+  }
+}
+
+.main-header__logo {
+  & svg {
+    @media (max-width: $bp-tablet-only) {
+      width: 118px;
+      height: 34px;
+    }
+
+    @media (max-width: $bp-mobile-only) {
+      width: 112px;
+      height: 34px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: #1C3374;
+    }
+
+    &:active {
+      fill: #0266C1;
+    }
+
+    &:disabled {
+      fill: #ffffff;
+      opacity: 0.1;
+    }
+  }
+}
+
+.main-header__phone {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    position: absolute;
+    top: 55px;
+    right: 5%;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

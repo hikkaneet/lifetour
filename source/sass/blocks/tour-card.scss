@@ -1,0 +1,129 @@
+.tour-card {
+  position: relative;
+  min-height: 412px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.tour-card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tour-card__container {
+  position: relative;
+  z-index: 2;
+  padding: 30px 5%;
+}
+
+.tour-card__first-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $color-default-white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 0 30% 0 0;
+  }
+}
+
+.tour-card__place-wrapper {
+  @media (max-width: $bp-mobile-only) {
+    order: 3;
+    margin: 19px 0 0;
+    width: 100%;
+  }
+}
+
+.tour-card__place {
+  padding: 9px 25px;
+  background-color: $color-navy-blue;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+}
+
+.tour-card__days,
+.tour-card__nights {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tour-card__days {
+  @media (max-width: $bp-mobile-only) {
+    order: 1;
+  }
+}
+
+.tour-card__nights {
+  @media (max-width: $bp-mobile-only) {
+    order: 2;
+  }
+}
+
+.tour-card__tour-name {
+  margin: 23px 0 0;
+  padding: 0 25% 0 0;
+  color: $color-default-white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.tour-card__second-wrapper {
+  margin: 38px 0 0;
+  color: $color-default-white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tour-card__description-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card__description-name {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tour-card__description-value {
+  margin: 7px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+
+
+
+

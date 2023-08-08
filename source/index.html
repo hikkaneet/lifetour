@@ -48,9 +48,639 @@
       </header>
 
       <main class="main-container">
-        <section class="hero">
 
+        <section class="hero">
+          <h2 class="visually-hidden">Геройский блок</h2>
+          <div class="hero__container">
+            <div class="hero__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__slide-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="320" height="568" srcset="./img/hero/hero-1-m.webp 1x, ./img/hero/hero-1-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="768" height="1024" srcset="./img/hero/hero-1-t.webp 1x, ./img/hero/hero-1-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/hero/hero-1-d.webp 1x, ./img/hero/hero-1-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="320" height="568" srcset="./img/hero/hero-1-m.jpg 1x, ./img/hero/hero-1-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="768" height="1024" srcset="./img/hero/hero-1-t.jpg 1x, ./img/hero/hero-1-t@2x.jpg 2x">
+                      <img width="1440" height="800" alt="#" src="./img/hero/hero-1-d.jpg" srcset="./img/hero/hero-1-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="hero__slide-container">
+                    <div class="hero__content-wrapper">
+                      <p class="hero__title">Захватывающие вершины Кавказа</p>
+                      <p class="hero__text">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                      <a class="hero__link button" href="#">Смотреть тур</a>
+                      <div class="hero__video">
+                        <div class="hero__video-preview">
+                          <picture>
+                            <source media="(max-width: 768px)" width="442" height="300" srcset="./img/hero/hero-1-video-t.webp 1x, ./img/hero/hero-1-video-t@2x.webp 2x" type="image/webp">
+                            <source srcset="./img/hero/hero-1-video-d.webp 1x, ./img/hero/hero-1-video-d@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 768px)" width="442" height="300" srcset="./img/hero/hero-1-video-t.jpg 1x, ./img/hero/hero-1-video-t@2x.jpg 2x">
+                            <img width="482" height="317" alt="#" src="./img/hero/hero-1-video-d.jpg" srcset="./img/hero/hero-1-video-d@2x.jpg 2x">
+                          </picture>
+                        </div>
+                        <button class="play-button" aria-label="Включить видео">
+                          <div class="play-button__default">
+                            <svg width="56" height="56">
+                              <use xlink:href="./img/sprite.svg#play-default"></use>
+                            </svg>
+                          </div>
+                          <div class="play-button__focus">
+                            <svg width="56" height="56">
+                              <use xlink:href="./img/sprite.svg#play-focus"></use>
+                            </svg>
+                          </div>
+                          <div class="play-button__active">
+                            <svg width="56" height="56">
+                              <use xlink:href="./img/sprite.svg#play-active"></use>
+                            </svg>
+                          </div>
+                          <div class="play-button__disabled">
+                            <svg width="56" height="56">
+                              <use xlink:href="./img/sprite.svg#play-disabled"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="hero__trail-description">
+                      <div class="hero__trail hero__trail--duration">
+                        <svg width="12" height="12" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        6 дней/5 ночей
+                      </div>
+                      <div class="hero__trail hero__trail--difficulty">
+                        <svg width="12" height="12" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Высокая сложность
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__slide-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="320" height="568" srcset="./img/hero/hero-2-m.webp 1x, ./img/hero/hero-2-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="768" height="1024" srcset="./img/hero/hero-2-t.webp 1x, ./img/hero/hero-2-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/hero/hero-2-d.webp 1x, ./img/hero/hero-2-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="320" height="568" srcset="./img/hero/hero-2-m.jpg 1x, ./img/hero/hero-2-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="768" height="1024" srcset="./img/hero/hero-2-t.jpg 1x, ./img/hero/hero-2-t@2x.jpg 2x">
+                      <img width="1440" height="800" alt="#" src="./img/hero/hero-2-d.jpg" srcset="./img/hero/hero-2-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="hero__slide-container">
+                    <div class="hero__content-wrapper">
+                      <p class="hero__title">Невероятная природа Камчатки</p>
+                      <p class="hero__text">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                      <a class="hero__link button" href="#">Смотреть тур</a>
+                      <div class="hero__photos">
+                        <div class="hero__first-photo">
+                          <picture>
+                            <source media="(max-width: 768px)" width="266" height="351" srcset="./img/hero/hero-2-card1-t.webp 1x, ./img/hero/hero-2-card1-t@2x.webp 2x" type="image/webp">
+                            <source srcset="./img/hero/hero-2-card1-t.webp 1x, ./img/hero/hero-2-card1-t@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 768px)" width="266" height="351" srcset="./img/hero/hero-2-card1-t.jpg 1x, ./img/hero/hero-2-card1-t@2x.jpg 2x">
+                            <img width="308" height="407" alt="#" src="./img/hero/hero-2-card1-d.png.jpg" srcset="./img/hero/hero-2-card1-d@2x.jpg 2x">
+                          </picture>
+                        </div>
+                        <div class="hero__second-photo">
+                          <picture>
+                            <source media="(max-width: 768px)" width="236" height="312" srcset="./img/hero/hero-2-card2-t.webp 1x, ./img/hero/hero-2-card2-t@2x.webp 2x" type="image/webp">
+                            <source srcset="./img/hero/hero-2-card2-t.webp 1x, ./img/hero/hero-2-card2-t@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 768px)" width="236" height="312" srcset="./img/hero/hero-2-card2-t.jpg 1x, ./img/hero/hero-2-card2-t@2x.jpg 2x">
+                            <img width="277" height="366" alt="#" src="./img/hero/hero-2-card2-d.png.jpg" srcset="./img/hero/hero-2-card2-d@2x.jpg 2x">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero__trail-description">
+                      <div class="hero__trail hero__trail--duration">
+                        <svg width="12" height="12" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        9 дней/10 ночей
+                      </div>
+                      <div class="hero__trail hero__trail--difficulty">
+                        <svg width="12" height="12" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Средняя сложность
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide hero__slide">
+                  <div class="hero__slide-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="320" height="568" srcset="./img/hero/hero-3-m.webp 1x, ./img/hero/hero-3-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="768" height="1024" srcset="./img/hero/hero-3-t.webp 1x, ./img/hero/hero-3-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/hero/hero-3-d.webp 1x, ./img/hero/hero-3-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="320" height="568" srcset="./img/hero/hero-3-m.jpg 1x, ./img/hero/hero-3-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="768" height="1024" srcset="./img/hero/hero-3-t.jpg 1x, ./img/hero/hero-3-t@2x.jpg 2x">
+                      <img width="1440" height="800" alt="#" src="./img/hero/hero-3-d.jpg" srcset="./img/hero/hero-3-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="hero__slide-container">
+                    <div class="hero__content-wrapper">
+                      <p class="hero__title">Магические пейзажи Алтайского Края</p>
+                      <p class="hero__text">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                      <a class="hero__link button" href="#">Смотреть тур</a>
+                      <div class="hero__audio audio-player">
+                        <div class="audio-player__wrapper">
+                          <div class="audio-player__track-info">
+                            <span class="audio-player__track-title">Алтай</span>
+                            <span class="audio-player__track-artist">Lifetour</span>
+                          </div>
+                          <div class="audio-player__top-buttons">
+                            <svg width="17" height="17">
+                              <use xlink:href="./img/sprite.svg#heart"></use>
+                            </svg>
+                            <svg width="17" height="17">
+                              <use xlink:href="./img/sprite.svg#share"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="audio-player__time-line"></div>
+                        <div class="audio-player__time">
+                          <span>2:30</span>
+                          <span>4:16</span>
+                        </div>
+                        <div class="audio-player__control">
+                          <svg width="25" height="25">
+                            <use xlink:href="./img/sprite.svg#shuffle"></use>
+                          </svg>
+                          <div class="audio-player__main-buttons">
+                            <svg width="22" height="22">
+                              <use xlink:href="./img/sprite.svg#previous"></use>
+                            </svg>
+                            <button class="audio-player__play-button">
+                              <svg width="47" height="47">
+                                <use xlink:href="./img/sprite.svg#play"></use>
+                              </svg>
+                            </button>
+                            <svg width="22" height="22">
+                              <use xlink:href="./img/sprite.svg#next"></use>
+                            </svg>
+                          </div>
+                          <svg width="25" height="25">
+                            <use xlink:href="./img/sprite.svg#repeat"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero__trail-description">
+                      <div class="hero__trail hero__trail--duration">
+                        <svg width="12" height="12" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        8 дней/7 ночей
+                      </div>
+                      <div class="hero__trail hero__trail--difficulty">
+                        <svg width="12" height="12" stroke="#ffffff">
+                          <use xlink:href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Легкая сложность
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="hero__pagination swiper-pagination"></div>
+            </div>
+          </div>
         </section>
+
+        <section class="nearest-tours">
+          <div class="nearest-tours__container">
+            <div class="nearest-tours__title title-block">
+              <h2 class="title-block__title">Ближайшие туры</h2>
+              <span class="title-block__title-shadow">Ближайшие туры</span>
+            </div>
+            <div class="nearest-tours__buttons-wrapper slider-buttons">
+              <div class="nearest-tours__button-prev slider-buttons__prev swiper-button-prev">
+                <svg width="14" height="9" fill="#ffffff">
+                  <use xlink:href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </div>
+              <div class="nearest-tours__button-next slider-buttons__next swiper-button-next">
+                <svg width="14" height="9" fill="#ffffff">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="nearest-tours__swiper swiper">
+              <div class="swiper-wrapper">
+
+                <div class="nearest-tours__slide tour-card swiper-slide">
+                  <div class="tour-card-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.webp 1x, ./img/tours/tour-elbrus-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.webp 1x, ./img/tours/tour-elbrus-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/tours/tour-elbrus-d.webp 1x, ./img/tours/tour-elbrus-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.jpg 1x, ./img/tours/tour-elbrus-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.jpg 1x, ./img/tours/tour-elbrus-t@2x.jpg 2x">
+                      <img width="380" height="412" alt="#" src="./img/tours/tour-elbrus-d.jpg" srcset="./img/tours/tour-elbrus-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="tour-card__container">
+                    <div class="tour-card__first-wrapper">
+                      <div class="tour-card__place-wrapper">
+                        <span class="tour-card__place">
+                          <svg width="9" height="12">
+                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
+                          </svg>
+                          Кавказ
+                        </span>
+                      </div>
+                      <span class="tour-card__days">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        4 дня</span>
+                      <span class="tour-card__nights">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        3 ночи</span>
+                    </div>
+                    <h3 class="tour-card__tour-name">Путешествие вокруг Эльбруса</h3>
+                    <div class="tour-card__second-wrapper">
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Сложность:</span>
+                        <span class="tour-card__description-value">
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Даты набора:</span>
+                        <span class="tour-card__description-value">12.06-19.06</span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Группа:</span>
+                        <span class="tour-card__description-value">до 15 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nearest-tours__slide tour-card swiper-slide">
+                  <div class="tour-card-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.webp 1x, ./img/tours/tour-beluha-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.webp 1x, ./img/tours/tour-beluha-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/tours/tour-beluha-d.webp 1x, ./img/tours/tour-beluha-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.jpg 1x, ./img/tours/tour-beluha-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.jpg 1x, ./img/tours/tour-beluha-t@2x.jpg 2x">
+                      <img width="380" height="412" alt="#" src="./img/tours/tour-beluha-d.jpg" srcset="./img/tours/tour-beluha-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="tour-card__container">
+                    <div class="tour-card__first-wrapper">
+                      <div class="tour-card__place-wrapper">
+                        <span class="tour-card__place">
+                          <svg width="9" height="12">
+                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
+                          </svg>
+                          Алтай
+                        </span>
+                      </div>
+                      <span class="tour-card__days">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        14 дней</span>
+                      <span class="tour-card__nights">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        13 ночей</span>
+                    </div>
+                    <h3 class="tour-card__tour-name">Путь к&nbsp;подножию Белухи</h3>
+                    <div class="tour-card__second-wrapper">
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Сложность:</span>
+                        <span class="tour-card__description-value">
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Даты набора:</span>
+                        <span class="tour-card__description-value">14.06-23.06</span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Группа:</span>
+                        <span class="tour-card__description-value">до 25 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nearest-tours__slide tour-card swiper-slide">
+                  <div class="tour-card-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.webp 1x, ./img/tours/tour-fisht-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.webp 1x, ./img/tours/tour-fisht-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/tours/tour-fisht-d.webp 1x, ./img/tours/tour-fisht-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.jpg 1x, ./img/tours/tour-fisht-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.jpg 1x, ./img/tours/tour-fisht-t@2x.jpg 2x">
+                      <img width="380" height="412" alt="#" src="./img/tours/tour-fisht-d.jpg" srcset="./img/tours/tour-fisht-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="tour-card__container">
+                    <div class="tour-card__first-wrapper">
+                      <div class="tour-card__place-wrapper">
+                        <span class="tour-card__place">
+                          <svg width="9" height="12">
+                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
+                          </svg>
+                          Адыгея
+                        </span>
+                      </div>
+                      <span class="tour-card__days">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        7 дней</span>
+                      <span class="tour-card__nights">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        6 ночей</span>
+                    </div>
+                    <h3 class="tour-card__tour-name">Через Фишт к&nbsp;Черному морю</h3>
+                    <div class="tour-card__second-wrapper">
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Сложность:</span>
+                        <span class="tour-card__description-value">
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Даты набора:</span>
+                        <span class="tour-card__description-value">15.07-19.07</span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Группа:</span>
+                        <span class="tour-card__description-value">до 22 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nearest-tours__slide tour-card swiper-slide">
+                  <div class="tour-card-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.webp 1x, ./img/tours/tour-elbrus-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.webp 1x, ./img/tours/tour-elbrus-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/tours/tour-elbrus-d.webp 1x, ./img/tours/tour-elbrus-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-elbrus-m.jpg 1x, ./img/tours/tour-elbrus-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-elbrus-t.jpg 1x, ./img/tours/tour-elbrus-t@2x.jpg 2x">
+                      <img width="380" height="412" alt="#" src="./img/tours/tour-elbrus-d.jpg" srcset="./img/tours/tour-elbrus-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="tour-card__container">
+                    <div class="tour-card__first-wrapper">
+                      <div class="tour-card__place-wrapper">
+                        <span class="tour-card__place">
+                          <svg width="9" height="12">
+                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
+                          </svg>
+                          Кавказ
+                        </span>
+                      </div>
+                      <span class="tour-card__days">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        4 дня</span>
+                      <span class="tour-card__nights">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        3 ночи</span>
+                    </div>
+                    <h3 class="tour-card__tour-name">Путешествие вокруг Эльбруса</h3>
+                    <div class="tour-card__second-wrapper">
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Сложность:</span>
+                        <span class="tour-card__description-value">
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Даты набора:</span>
+                        <span class="tour-card__description-value">12.06-19.06</span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Группа:</span>
+                        <span class="tour-card__description-value">до 15 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nearest-tours__slide tour-card swiper-slide">
+                  <div class="tour-card-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.webp 1x, ./img/tours/tour-beluha-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.webp 1x, ./img/tours/tour-beluha-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/tours/tour-beluha-d.webp 1x, ./img/tours/tour-beluha-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-beluha-m.jpg 1x, ./img/tours/tour-beluha-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-beluha-t.jpg 1x, ./img/tours/tour-beluha-t@2x.jpg 2x">
+                      <img width="380" height="412" alt="#" src="./img/tours/tour-beluha-d.jpg" srcset="./img/tours/tour-beluha-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="tour-card__container">
+                    <div class="tour-card__first-wrapper">
+                      <div class="tour-card__place-wrapper">
+                        <span class="tour-card__place">
+                          <svg width="9" height="12">
+                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
+                          </svg>
+                          Алтай
+                        </span>
+                      </div>
+                      <span class="tour-card__days">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        14 дней</span>
+                      <span class="tour-card__nights">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        13 ночей</span>
+                    </div>
+                    <h3 class="tour-card__tour-name">Путь к&nbsp;подножию Белухи</h3>
+                    <div class="tour-card__second-wrapper">
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Сложность:</span>
+                        <span class="tour-card__description-value">
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Даты набора:</span>
+                        <span class="tour-card__description-value">14.06-23.06</span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Группа:</span>
+                        <span class="tour-card__description-value">до 25 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="nearest-tours__slide tour-card swiper-slide">
+                  <div class="tour-card-bg">
+                    <picture>
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.webp 1x, ./img/tours/tour-fisht-m@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.webp 1x, ./img/tours/tour-fisht-t@2x.webp 2x" type="image/webp">
+                      <source srcset="./img/tours/tour-fisht-d.webp 1x, ./img/tours/tour-fisht-d@2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 320px)" width="290" height="412" srcset="./img/tours/tour-fisht-m.jpg 1x, ./img/tours/tour-fisht-m@2x.jpg 2x">
+                      <source media="(max-width: 768px)" width="324" height="412" srcset="./img/tours/tour-fisht-t.jpg 1x, ./img/tours/tour-fisht-t@2x.jpg 2x">
+                      <img width="380" height="412" alt="#" src="./img/tours/tour-fisht-d.jpg" srcset="./img/tours/tour-fisht-d@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <div class="tour-card__container">
+                    <div class="tour-card__first-wrapper">
+                      <div class="tour-card__place-wrapper">
+                        <span class="tour-card__place">
+                          <svg width="9" height="12">
+                            <use xlink:href="./img/sprite.svg#mark-filled"></use>
+                          </svg>
+                          Адыгея
+                        </span>
+                      </div>
+                      <span class="tour-card__days">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        7 дней</span>
+                      <span class="tour-card__nights">
+                        <svg width="20" height="20" fill="#ffffff">
+                          <use xlink:href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        6 ночей</span>
+                    </div>
+                    <h3 class="tour-card__tour-name">Через Фишт к&nbsp;Черному морю</h3>
+                    <div class="tour-card__second-wrapper">
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Сложность:</span>
+                        <span class="tour-card__description-value">
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star-filled"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                          <svg width="15" height="14">
+                            <use xlink:href="./img/sprite.svg#star"></use>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Даты набора:</span>
+                        <span class="tour-card__description-value">15.07-19.07</span>
+                      </div>
+                      <div class="tour-card__description-wrapper">
+                        <span class="tour-card__description-name">Группа:</span>
+                        <span class="tour-card__description-value">до 22 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <a class="nearest-tours__link arrowed" href="#">Показать все туры
+              <svg width="6" height="12" stroke="#2D383F">
+                <use xlink:href="./img/sprite.svg#text-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+
       </main>
 
       <footer class="main-footer">

@@ -1,0 +1,54 @@
+.nearest-tours {
+  padding: 120px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $bp-tablet-only) {
+
+  }
+
+  @media (max-width: $bp-mobile-only) {
+
+  }
+}
+
+.nearest-tours__container {
+  position: relative;
+  max-width: $bp-max-limiter;
+  width: 100%;
+}
+
+.nearest-tours__swiper {
+  margin: 58px 0 0;
+}
+
+.nearest-tours__link {
+  display: block;
+  margin: 52px auto 0 auto;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  width: fit-content;
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

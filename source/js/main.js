@@ -2,12 +2,16 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {attachMobileMenu} from './mobile-menu';
+import {attachVideoPlayer} from './iframe-video';
+import {attachAudioPlayer} from './iframe-audio';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   attachMobileMenu();
+  attachVideoPlayer();
+  attachAudioPlayer();
 
   // Utils
   // ---------------------------------

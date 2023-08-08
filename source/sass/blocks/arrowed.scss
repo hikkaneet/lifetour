@@ -1,0 +1,41 @@
+.arrowed {
+  color: #2d383f;
+
+  & svg {
+    stroke: #2d383f;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: #1c3374;
+
+    & svg {
+      stroke: #1c3374;
+    }
+  }
+
+  &:active {
+    color: #0266C1;
+
+    & svg {
+      stroke: #0266C1;
+    }
+  }
+
+  &:disabled {
+    color: rgba(2, 102, 193, 0.1);
+
+    & svg {
+      stroke: rgba(2, 102, 193, 0.1);
+    }
+  }
+}
+
+
+
+
+
+
+
+

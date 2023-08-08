@@ -1,0 +1,61 @@
+.slider-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 78px;
+  height: 35px;
+}
+
+.slider-buttons__prev,
+.slider-buttons__next {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  border: 1px solid $color-navy-blue;
+  box-sizing: border-box;
+  background: $color-navy-blue;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    border-color: #1C3374;
+    background-color: $color-default-white;
+
+    & svg {
+      fill: #1C3374;
+    }
+  }
+
+  &:active {
+    border-color: #1C3374;
+    background-color: #1C3374;
+
+    & svg {
+      fill: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    border-color: rgba(2, 102, 193, 0.10);
+    background-color: rgba(2, 102, 193, 0.10);
+
+    & svg {
+      fill: $color-default-white;
+    }
+  }
+}
+
+.slider-buttons__prev {
+  left: 0;
+}
+
+.slider-buttons__next {
+  right: 0;
+}
+

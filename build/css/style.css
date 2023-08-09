@@ -1925,10 +1925,10 @@ button,
 .main-footer__social-link:active svg {
   fill: #ffffff;
 }
-.main-footer__social-link:active:disabled {
+.main-footer__social-link:disabled {
   border: 1px solid rgba(45, 56, 63, 0.3);
 }
-.main-footer__social-link:active:disabled svg {
+.main-footer__social-link:disabled svg {
   fill: rgba(45, 56, 63, 0.3);
 }
 
@@ -2431,7 +2431,6 @@ button,
 }
 
 .nearest-tours {
-  padding: 120px 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2442,7 +2441,19 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 120px 8%;
 }
+@media (max-width: 1199px) {
+  .nearest-tours {
+    padding: 84px 7%;
+  }
+}
+@media (max-width: 767px) {
+  .nearest-tours {
+    padding: 66px 4%;
+  }
+}
+
 .nearest-tours__container {
   position: relative;
   max-width: 1440px;
@@ -2780,6 +2791,310 @@ button,
 }
 .arrowed:disabled svg {
   stroke: rgba(2, 102, 193, 0.1);
+}
+
+.training {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 120px 8%;
+}
+@media (max-width: 1199px) {
+  .training {
+    padding: 84px 7%;
+  }
+}
+@media (max-width: 767px) {
+  .training {
+    padding: 66px 4%;
+  }
+}
+
+.training__container {
+  max-width: 1440px;
+}
+
+.training__description {
+  margin: 38px 0 0;
+  padding: 0 30% 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 767px) {
+  .training__description {
+    line-height: 20px;
+    padding: 0;
+  }
+}
+
+.training__slider-name {
+  margin: 52px 0 0;
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+@media (max-width: 1199px) {
+  .training__slider-name {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .training__slider-name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.trainer-card__social-link {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.trainer-card__social-link:hover, .trainer-card__social-link:focus {
+  border: 1px solid rgb(45, 56, 63);
+}
+.trainer-card__social-link:active {
+  border: 1px solid #0266C1;
+  background-color: #0266C1;
+}
+.trainer-card__social-link:active svg {
+  fill: #ffffff;
+}
+.trainer-card__social-link:disabled {
+  border: 1px solid rgba(45, 56, 63, 0.3);
+}
+.trainer-card__social-link:disabled svg {
+  fill: rgba(45, 56, 63, 0.3);
+}
+
+.training__swiper {
+  margin: 14px -30px 0 -30px;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .training__swiper {
+    margin: 14px -15px 0 -15px;
+    padding: 15px;
+  }
+}
+
+.training__slider-container {
+  position: relative;
+}
+
+.trainer-card__learning-title {
+  display: block;
+  margin: 20px 0 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+@media (max-width: 1199px) {
+  .trainer-card__learning-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .trainer-card__learning-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.trainer-card__learning-list {
+  margin: 45px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+}
+.trainer-card__learning-list::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(2, 102, 193, 0.2);
+  bottom: -32px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 1199px) {
+  .trainer-card__learning-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 90px;
+  }
+  .trainer-card__learning-list::after {
+    position: absolute;
+    content: "";
+    width: 52%;
+    height: 74px;
+    background-color: transparent;
+    border: 1px solid rgba(2, 102, 193, 0.2);
+    border-left: 1px solid transparent;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 7px;
+  }
+}
+@media (max-width: 1199px) and (max-width: 767px) {
+  .trainer-card__learning-list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 25px;
+  }
+  .trainer-card__learning-list::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: rgba(2, 102, 193, 0.2);
+    border: 0;
+    top: 50%;
+    left: 7px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.trainer-card__learning-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+}
+.trainer-card__learning-item::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0266C1;
+  bottom: -39px;
+  left: 0;
+}
+@media (max-width: 1199px) {
+  .trainer-card__learning-item {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .trainer-card__learning-item::before {
+    bottom: -15px;
+  }
+  .trainer-card__learning-item--top-mark::before {
+    top: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .trainer-card__learning-item {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 0 0 10%;
+  }
+  .trainer-card__learning-item::before {
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .trainer-card__learning-item--top-mark::before {
+    top: 0;
+  }
+}
+
+.trainer-card {
+  padding: 20px 2% 36px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+          box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  min-height: 378px;
+  z-index: 9999;
+}
+
+.trainer-card__photo {
+  width: 100%;
+  height: 100%;
+}
+.trainer-card__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-card__wrapper {
+  margin: 15px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trainer-card__name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.trainer-card__about {
+  margin: 15px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@media (max-width: 1199px) {
+  .trainer-card__about {
+    line-height: 18px;
+  }
 }
 
 .custom-input,

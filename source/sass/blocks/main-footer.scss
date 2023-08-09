@@ -164,13 +164,13 @@
     & svg {
       fill: $color-default-white;
     }
+  }
 
-    &:disabled {
-      border: 1px solid rgba(45, 56, 63, 0.3);
+  &:disabled {
+    border: 1px solid rgba(45, 56, 63, 0.3);
 
-      & svg {
-        fill: rgba(45, 56, 63, 0.3);
-      }
+    & svg {
+      fill: rgba(45, 56, 63, 0.3);
     }
   }
 }

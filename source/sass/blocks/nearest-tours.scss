@@ -1,15 +1,15 @@
 .nearest-tours {
-  padding: 120px 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 120px 8%;
 
   @media (max-width: $bp-tablet-only) {
-
+    padding: 84px 7%;
   }
 
   @media (max-width: $bp-mobile-only) {
-
+    padding: 66px 4%;
   }
 }
 

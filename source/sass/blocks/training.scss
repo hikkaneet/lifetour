@@ -1,7 +1,4 @@
 .training {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
   padding: 120px 8%;
 
   @media (max-width: $bp-tablet-only) {
@@ -15,6 +12,7 @@
 
 .training__container {
   max-width: $bp-max-limiter;
+  margin: 0 auto;
 }
 
 .training__description {

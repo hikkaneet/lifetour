@@ -7,6 +7,9 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
+  position: relative;
+  z-index: 2;
+  user-select: text;
 
   @media (max-width: $bp-tablet-only) {
     font-size: 25px;
@@ -28,6 +31,8 @@
   font-weight: 800;
   line-height: 55px;
   opacity: 0.03;
+  z-index: 1;
+  user-select: none;
 
   @media (max-width: $bp-tablet-only) {
     font-size: 40px;

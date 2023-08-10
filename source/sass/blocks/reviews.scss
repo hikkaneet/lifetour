@@ -1,0 +1,40 @@
+.reviews {
+  padding: 40px 8%;
+
+  @media (max-width: $bp-tablet-only) {
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 40px 4%;
+  }
+}
+
+.reviews__container {
+  max-width: $bp-max-limiter;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reviews__buttons-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.reviews__swiper {
+  margin: 30px -8vw 0 -30px;
+  padding: 30px;
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 30px -15px 0;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+

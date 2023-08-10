@@ -61,8 +61,28 @@ const initTrainingSwiper = () => {
   });
 };
 
+const initReviewsSwiper = () => {
+  // eslint-disable-next-line
+  const heroSwiper = new Swiper('.reviews__swiper', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+      },
+    },
+    navigation: {
+      nextEl: '.reviews__button-next',
+      prevEl: '.reviews__button-prev',
+    },
+  });
+};
+
 initHeroSwiper();
 initToursSwiper();
 initTrainingSwiper();
+initReviewsSwiper();
 
 

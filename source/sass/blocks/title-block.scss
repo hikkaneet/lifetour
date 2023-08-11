@@ -1,5 +1,18 @@
 .title-block {
   position: relative;
+
+  &--centred {
+    display: flex;
+    justify-content: center;
+
+    & .title-block__title-shadow {
+      left: auto;
+    }
+
+    & .title-block__title {
+      padding: 0;
+    }
+  }
 }
 
 .title-block__title {

@@ -1,0 +1,72 @@
+.advantage-card {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  min-height: 330px;
+
+  @media (max-width: $bp-tablet-only) {
+    padding: 30px 20px;
+    width: 324px;
+    min-height: auto;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 20px 10px;
+    width: 290px;
+  }
+}
+
+.advantage-card__image {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #0266C1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage-card__title {
+  margin: 30px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 25px 0 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.advantage-card__text {
+  margin: 15px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

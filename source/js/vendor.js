@@ -80,9 +80,52 @@ const initReviewsSwiper = () => {
   });
 };
 
+const initAdvantagesSwiper = () => {
+  const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+  if (viewportWidth > 1199) {
+    const advantagesSwiper = document.querySelector('.advantages__swiper');
+    const buttonNext = document.querySelector('.advantages__button-next');
+    const buttonPrev = document.querySelector('.advantages__button-prev');
+
+    if (advantagesSwiper && buttonNext && buttonPrev) {
+      // eslint-disable-next-line
+      const heroSwiper = new Swiper('.advantages__swiper', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoHeight: true,
+        navigation: {
+          nextEl: '.advantages__button-next',
+          prevEl: '.advantages__button-prev',
+        },
+      });
+    }
+  }
+};
+
+const initGallerySwiper = () => {
+  // eslint-disable-next-line
+  const heroSwiper = new Swiper('.photo-gallery__swiper', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 5,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.photo-gallery__button-next',
+      prevEl: '.photo-gallery__button-prev',
+    },
+  });
+};
+
+
 initHeroSwiper();
 initToursSwiper();
 initTrainingSwiper();
 initReviewsSwiper();
+initAdvantagesSwiper();
+initGallerySwiper();
 
 

@@ -1327,6 +1327,108 @@
 
         </section>
 
+        <section class="questions">
+          <h2 class="visually-hidden">Вопросы</h2>
+          <div class="questions__bg">
+            <picture>
+              <source media="(max-width: 320px)" width="320" height="621"
+                srcset="./img/form/form-bg-m.webp 1x, ./img/form/form-bg-m@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 768px)" width="768" height="679"
+                srcset="./img/form/form-bg-t.webp 1x, ./img/form/form-bg-t@2x.webp 2x" type="image/webp">
+              <source srcset="./img/form/form-bg-d.webp 1x, ./img/form/form-bg-d@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 320px)" width="320" height="621"
+                srcset="./img/form/form-bg-m.png 1x, ./img/form/form-bg-m@2x.png 2x">
+              <source media="(max-width: 768px)" width="768" height="679"
+                srcset="./img/form/form-bg-t.png 1x, ./img/form/form-bg-t@2x.png 2x">
+              <img width="1440" height="800" alt="#" src="./img/form/form-bg-d.png" srcset="./img/form/form-bg-d@2x.png 2x">
+            </picture>
+          </div>
+          <div class="questions__container" data-form-validate data-callback="base">
+            <p class="questions__title">Остались вопросы?</p>
+            <p class="questions__text">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+            <form class="questions__form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="questions__input-wrapper custom-input" data-validate-type="text" data-limitation="name"
+                data-message-base="Нужно заполнить" data-message-extra="Нужно исправить" data-required>
+                <label>
+                  <input type="text" name="customer-name" placeholder="Как к вам обращаться?" required maxlength="64"
+                    autocomplete="off">
+                </label>
+              </div>
+              <div class="questions__input-wrapper custom-input" data-validate-type="phone" data-on-input-validate
+                data-message-base="Нужно заполнить" data-message-extra="Нужно исправить" data-message-success="Всё верно"
+                data-required>
+                <label>
+                  <input type="tel" name="customer-phone" placeholder="Телефон" required maxlength="24" autocomplete="off">
+                </label>
+              </div>
+              <button class="questions__button button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__text-wrapper">
+
+              <div class="contacts__title title-block">
+                <h2 class="title-block__title">Контакты</h2>
+                <span class="title-block__title-shadow">Контакты</span>
+              </div>
+
+              <p class="contacts__description">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+
+              <ul class="contacts__list">
+
+                <li class="contacts__item">
+                  <svg width="26" height="26">
+                    <use xlink:href="./img/sprite.svg#phone"></use>
+                  </svg>
+                  <div class="contacts__item-wrapper">
+                    <span class="contacts__item-title">Телефон</span>
+                    <a class="contacts__item-content link" href="tel:88005555555">8 983 745 45 45</a>
+                  </div>
+                </li>
+
+                <li class="contacts__item">
+                  <svg width="26" height="26">
+                    <use xlink:href="./img/sprite.svg#mail"></use>
+                  </svg>
+                  <div class="contacts__item-wrapper">
+                    <span class="contacts__item-title">E-mail</span>
+                    <a class="contacts__item-content link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+                  </div>
+                </li>
+
+                <li class="contacts__item">
+                  <svg width="26" height="26">
+                    <use xlink:href="./img/sprite.svg#mark"></use>
+                  </svg>
+                  <div class="contacts__item-wrapper">
+                    <span class="contacts__item-title">Адрес</span>
+                    <span class="contacts__item-content">г. Москва, пр-т Мира, д. 14, офис 101</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <div class="contacts__map-wrapper" id="map">
+              <picture>
+                <source media="(max-width: 1440px)" width="290" height="320"
+                  srcset="./img/map/map-d.webp 1x, ./img/map/map-d@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 768px)" width="678" height="340"
+                  srcset="./img/map/map-t.webp 1x, ./img/map/map-t@2x.webp 2x" type="image/webp">
+                <source srcset="./img/map/map-m.webp 1x, ./img/map/map-m@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 1440px)" width="290" height="320"
+                  srcset="./img/map/map-d.jpg 1x, ./img/map/map-d@2x.jpg 2x">
+                <source media="(max-width: 768px)" width="678" height="340"
+                  srcset="./img/map/map-t.jpg 1x, ./img/map/map-t@2x.jpg 2x">
+                <img width="585" height="324" alt="г. Москва, пр-т Мира, д. 14, офис 101" src="./img/map/map-m.jpg"
+                  srcset="./img/map/map-m@2x.jpg 2x">
+              </picture>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer class="main-footer">

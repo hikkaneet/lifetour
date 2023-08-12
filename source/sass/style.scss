@@ -2,8 +2,8 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
 @import "vendor/swiper";
+@import "vendor/leaflet";
 
 // Global
 // ---------------------------------
@@ -44,6 +44,8 @@
 @import "blocks/advantages";
 @import "blocks/advantage-card";
 @import "blocks/photo-gallery";
+@import "blocks/questions";
+@import "blocks/contacts";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";

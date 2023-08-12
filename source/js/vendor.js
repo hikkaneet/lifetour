@@ -1,6 +1,7 @@
 // Swiper 7.4.1
 import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
+import './vendor/leaflet/leaflet';
 
 const initHeroSwiper = () => {
   // eslint-disable-next-line
@@ -120,6 +121,27 @@ const initGallerySwiper = () => {
   });
 };
 
+const initMap = () => {
+  // eslint-disable-next-line
+  let map = L.map('map').setView([55.774836, 37.632664], 15);
+
+  // eslint-disable-next-line
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+
+  // eslint-disable-next-line
+  let pin = L.icon({
+    iconUrl: '../img/svg/pin-filled.svg',
+    iconSize: [16, 20],
+    iconAnchor: [8, 19],
+  });
+
+  // eslint-disable-next-line
+  L.marker([55.774836, 37.632664], {icon: pin}).addTo(map);
+};
+
 
 initHeroSwiper();
 initToursSwiper();
@@ -127,5 +149,6 @@ initTrainingSwiper();
 initReviewsSwiper();
 initAdvantagesSwiper();
 initGallerySwiper();
+initMap();
 
 

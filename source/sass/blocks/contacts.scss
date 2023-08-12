@@ -1,0 +1,122 @@
+.contacts {
+  padding: 60px 8% 40px;
+}
+
+.contacts__container {
+  display: flex;
+
+  @media (max-width: $bp-tablet-only) {
+    flex-direction: column;
+  }
+}
+
+.contacts__description {
+  margin: 25px 0 0;
+  padding: 0 25% 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 40px 0 0;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 30px 0 0;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.contacts__item-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.contacts__map-wrapper {
+  margin: auto 0 0;
+  width: 100%;
+  height: 100%;
+  min-height: 324px;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 40px 0 0;
+    min-height: 340px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    min-height: 320px;
+  }
+}
+

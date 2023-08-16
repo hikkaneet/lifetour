@@ -20,7 +20,7 @@
   margin: 45px -24% 0 -11%;
 
   @media (max-width: $bp-tablet-only) {
-    margin: 38px -26% 0 -13%;
+    margin: 38px -10% 0 -82%;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -92,7 +92,7 @@
 
   @media (max-width: $bp-tablet-only) {
     top: 18px;
-    right: 0px;
+    right: 0;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -102,15 +102,8 @@
     transform: translateX(-100%);
     right: auto;
   }
+
+  @media (min-width: 1441px) {
+    right: 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-

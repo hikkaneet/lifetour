@@ -1,7 +1,7 @@
 .menu-item {
   position: relative;
 
-  &--light{
+  &--light {
     color: $color-default-white;
 
     &:focus-visible {
@@ -41,7 +41,7 @@
     }
   }
 
-  &--dark{
+  &--dark {
     color: $color-elephant;
 
     &:focus-visible {
@@ -81,10 +81,3 @@
     }
   }
 }
-
-
-
-
-
-
-

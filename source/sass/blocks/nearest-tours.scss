@@ -94,6 +94,9 @@
 }
 
 .nearest-tours__buttons-wrapper {
+  top: 4px;
+  right: 0;
+
   @media (max-width: $bp-tablet-only) {
     top: -5px;
     right: -7px;
@@ -104,9 +107,3 @@
     right: 0;
   }
 }
-
-
-
-
-
-

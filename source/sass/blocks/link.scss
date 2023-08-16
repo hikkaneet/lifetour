@@ -1,19 +1,19 @@
 .link {
-  &--light{
+  &--light {
     color: $color-default-white;
 
     &:hover,
     &:focus {
       outline: 0;
-      color: #1C3374;
+      color: #1c3374;
     }
 
     &:active {
-      color: #0266C1;
+      color: #0266c1;
     }
 
     &:disabled {
-      color: rgba(255, 255, 255, 0.10);
+      color: rgba(255, 255, 255, 0.1);
     }
   }
 
@@ -23,22 +23,15 @@
     &:hover,
     &:focus {
       outline: 0;
-      color: #1C3374;
+      color: #1c3374;
     }
 
     &:active {
-      color: #0266C1;
+      color: #0266c1;
     }
 
     &:disabled {
-      color: rgba(2, 102, 193, 0.10);
+      color: rgba(2, 102, 193, 0.1);
     }
   }
 }
-
-
-
-
-
-
-

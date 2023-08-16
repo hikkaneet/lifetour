@@ -261,19 +261,23 @@
   // bottom: 10px;
   // left: 0;
   // width: 100%;
-  bottom: 90px;
-  right: calc(8% - 3px);
-  width: fit-content;
+  bottom: 98px;
+  width: 100%;
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 calc(8% - 2px) 0 0;
 
   @media (max-width: 1199px) {
-    right: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 82px;
+    bottom: 90px;
+    padding: 0 45% 0 0;
   }
 
   @media (max-width: 767px) {
-    bottom: 33px;
+    bottom: 39px;
+    padding: 0 40% 0 0;
   }
 }
 /* Bullets */

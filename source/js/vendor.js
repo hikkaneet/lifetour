@@ -192,5 +192,3 @@ initReviewsSwiper();
 initAdvantagesSwiper();
 initGallerySwiper();
 initMap();
-
-

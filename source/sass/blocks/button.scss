@@ -9,27 +9,24 @@
   line-height: 16px;
   cursor: pointer;
 
+  &:focus-visible,
   &:hover,
   &:focus {
-    border-color: #1C3374;
-    color: #1C3374;
+    border-color: #1c3374;
+    color: #1c3374;
     background-color: $color-default-white;
+    outline: 0;
   }
 
   &:active {
-    border-color: #1C3374;
+    border-color: #1c3374;
     color: $color-default-white;
-    background-color: #1C3374;
+    background-color: #1c3374;
   }
 
   &:disabled {
-    border-color: rgba(2, 102, 193, 0.10);
+    border-color: rgba(2, 102, 193, 0.1);
     color: $color-default-white;
-    background-color: rgba(2, 102, 193, 0.10);
+    background-color: rgba(2, 102, 193, 0.1);
   }
 }
-
-
-
-
-

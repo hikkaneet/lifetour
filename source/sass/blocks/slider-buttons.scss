@@ -24,17 +24,17 @@
   &:hover,
   &:focus {
     outline: 0;
-    border-color: #1C3374;
+    border-color: #1c3374;
     background-color: $color-default-white;
 
     & svg {
-      fill: #1C3374;
+      fill: #1c3374;
     }
   }
 
   &:active {
-    border-color: #1C3374;
-    background-color: #1C3374;
+    border-color: #1c3374;
+    background-color: #1c3374;
 
     & svg {
       fill: $color-default-white;
@@ -42,8 +42,8 @@
   }
 
   &:disabled {
-    border-color: rgba(2, 102, 193, 0.10);
-    background-color: rgba(2, 102, 193, 0.10);
+    border-color: rgba(2, 102, 193, 0.1);
+    background-color: rgba(2, 102, 193, 0.1);
 
     & svg {
       fill: $color-default-white;
@@ -58,4 +58,3 @@
 .slider-buttons__next {
   right: 0;
 }
-

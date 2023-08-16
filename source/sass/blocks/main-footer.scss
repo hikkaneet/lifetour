@@ -6,7 +6,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 100vw;
     height: 1px;
     background: rgba(45, 56, 63, 0.2);
@@ -47,6 +47,26 @@
 }
 
 .main-footer__logo {
+  &:hover,
+  &:focus {
+    & svg {
+      fill: #1c3374;
+    }
+  }
+
+  &:active {
+    & svg {
+      fill: #0266c1;
+    }
+  }
+
+  &:disabled {
+    & svg {
+      fill: #ffffff;
+      opacity: 0.1;
+    }
+  }
+
   & svg {
     width: 205px;
     height: 60px;
@@ -59,20 +79,6 @@
     @media (max-width: $bp-mobile-only) {
       width: 112px;
       height: 34px;
-    }
-
-    &:hover,
-    &:focus {
-      fill: #1C3374;
-    }
-
-    &:active {
-      fill: #0266C1;
-    }
-
-    &:disabled {
-      fill: #ffffff;
-      opacity: 0.1;
     }
   }
 }
@@ -92,7 +98,7 @@
 
   @media (max-width: $bp-mobile-only) {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin: 10px 0 0 -4px;
     width: 100%;
@@ -129,9 +135,6 @@
   @media (max-width: $bp-tablet-only) {
     font-size: 14px;
     line-height: 14px;
-  }
-
-  @media (max-width: $bp-mobile-only) {
   }
 }
 
@@ -171,9 +174,11 @@
   border: 1px solid rgba(45, 56, 63, 0.3);
   box-sizing: border-box;
 
+  &:focus-visible,
   &:hover,
   &:focus {
     border: 1px solid rgba(45, 56, 63, 1);
+    outline: 0;
   }
 
   &:active {
@@ -206,4 +211,3 @@
     text-align: left;
   }
 }
-

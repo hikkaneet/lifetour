@@ -33,14 +33,12 @@
     top: 50%;
 
     & img {
-      width: 768px;
       height: 679px;
     }
   }
 
   @media (max-width: $bp-mobile-only) {
     & img {
-      width: 320px;
       height: 621px;
     }
   }
@@ -175,5 +173,3 @@
     width: 100%;
   }
 }
-
-

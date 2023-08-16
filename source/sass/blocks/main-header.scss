@@ -73,6 +73,7 @@
   display: none;
 
   @media (max-width: $bp-tablet-only) {
+    margin: -8px 0 0 -1px;
     display: block;
   }
 
@@ -83,30 +84,30 @@
   & .main-header__icon-menu svg {
     &:hover,
     &:focus {
-      fill: #1C3374;
+      fill: #1c3374;
     }
 
     &:active {
-      fill: #0266C1;
+      fill: #0266c1;
     }
 
     &:disabled {
-      fill: rgba(255, 255, 255, 0.10);
+      fill: rgba(255, 255, 255, 0.1);
     }
   }
 
   & .main-header__icon-cross svg {
     &:hover,
     &:focus {
-      stroke: #1C3374;
+      stroke: #1c3374;
     }
 
     &:active {
-      stroke: #0266C1;
+      stroke: #0266c1;
     }
 
     &:disabled {
-      stroke: rgba(2, 102, 193, 0.10);
+      stroke: rgba(2, 102, 193, 0.1);
     }
   }
 }
@@ -114,20 +115,20 @@
 .main-header__logo {
   &:focus-visible {
     outline: 0;
+
     & svg {
-      fill: #1C3374;
+      fill: #1c3374;
     }
   }
 
   & svg {
-
     &:hover,
-    &:focus{
-      fill: #1C3374;
+    &:focus {
+      fill: #1c3374;
     }
 
     &:active {
-      fill: #0266C1;
+      fill: #0266c1;
     }
 
     &:disabled {
@@ -173,14 +174,3 @@
     line-height: 14px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-

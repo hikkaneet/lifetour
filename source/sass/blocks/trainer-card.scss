@@ -1,19 +1,16 @@
 .trainer-card {
-  padding: 20px calc(2% - 5px) 36px;
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
-  max-height: 377px;
+  padding: 20px calc(2% - 5px) 6px;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   min-height: 377px;
   z-index: 3;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 18px calc(3% - 5px) 36px;
-    max-height: 411px;
+    padding: 18px calc(3% - 5px) 6px;
     min-height: 411px;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 22px 7% 36px;
-    max-height: 385px;
+    padding: 22px 7% 6px;
     min-height: 385px;
   }
 }
@@ -74,9 +71,11 @@
   border: 1px solid rgba(45, 56, 63, 0.3);
   box-sizing: border-box;
 
+  &:focus-visible,
   &:hover,
   &:focus {
     border: 1px solid rgba(45, 56, 63, 1);
+    outline: 0;
   }
 
   &:active {
@@ -96,10 +95,3 @@
     }
   }
 }
-
-
-
-
-
-
-

@@ -6,8 +6,11 @@
   border: 0;
   background: 0;
 
+  &:focus-visible,
   &:hover,
   &:focus {
+    outline: 0;
+
     & .play-button__default,
     & .play-button__active,
     & .play-button__disabled {
@@ -49,6 +52,3 @@
 .play-button__disabled {
   display: none;
 }
-
-
-

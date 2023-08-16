@@ -1,6 +1,6 @@
 .training {
   padding: 105px calc(8% + 5px) 60px;
-  overflow-x: hidden;
+  overflow-x: clip;
 
   @media (max-width: $bp-tablet-only) {
     padding: 67px calc(6% - 2px) 20px;
@@ -63,7 +63,7 @@
   padding: 30px;
 
   @media (max-width: $bp-tablet-only) {
-    margin: 0px -30px 0;
+    margin: 0 -30px 0;
     padding: 30px;
   }
 
@@ -81,7 +81,7 @@
   position: relative;
 }
 
-.trainer__learning-title {
+.training__learning-title {
   display: block;
   margin: 20px 0 0;
   font-size: 21px;
@@ -101,7 +101,7 @@
   }
 }
 
-.trainer__learning-list {
+.training__learning-list {
   margin: 40px 0 0;
   padding: 0;
   list-style-type: none;
@@ -132,7 +132,7 @@
       width: 52%;
       height: 56px;
       background-color: transparent;
-      border: 1px solid rgba(2, 102, 193, .2);
+      border: 1px solid rgba(2, 102, 193, 0.2);
       border-left: 1px solid transparent;
       top: 49%;
       transform: translateY(-50%);
@@ -150,7 +150,7 @@
         content: "";
         width: 1px;
         height: 80%;
-        background-color: rgba(2,102,193,.2);
+        background-color: rgba(2, 102, 193, 0.2);
         border: 0;
         top: 50%;
         left: 7px;
@@ -160,9 +160,9 @@
   }
 }
 
-.trainer__learning-item {
+.training__learning-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 15px;
   font-size: 16px;

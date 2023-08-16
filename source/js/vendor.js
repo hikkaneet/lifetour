@@ -110,25 +110,35 @@ const initAdvantagesSwiper = () => {
   const buttonPrev = document.querySelector('.advantages__button-prev');
 
   if (advantagesSwiper && buttonNext && buttonPrev) {
-    // eslint-disable-next-line
-    const advantagesSwiper = new Swiper('.advantages__swiper', {
-      direction: 'horizontal',
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      loop: true,
-      centeredSlides: true,
-      autoHeight: true,
-      navigation: {
-        nextEl: '.advantages__button-next',
-        prevEl: '.advantages__button-prev',
-      },
-    });
+    let swiper;
 
-    if (window.innerWidth <= 1199) {
-      advantagesSwiper.destroy();
-    } else {
-      advantagesSwiper.init();
+    const initSwiper = () => {
+      // eslint-disable-next-line
+      swiper = new Swiper('.advantages__swiper', {
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoHeight: true,
+        navigation: {
+          nextEl: '.advantages__button-next',
+          prevEl: '.advantages__button-prev',
+        },
+      });
+    };
+
+    if (window.innerWidth > 1199) {
+      initSwiper();
     }
+
+    window.addEventListener('resize', () => {
+      if (swiper && window.innerWidth <= 1199) {
+        swiper.destroy();
+      } else if (!swiper && window.innerWidth > 1199) {
+        initSwiper();
+      }
+    });
 
   }
 };
@@ -175,15 +185,6 @@ const initMap = () => {
     L.marker([55.774836, 37.632664], { icon: pin }).addTo(map);
   }
 };
-
-// function mountSwiper = (slider) => {
-//   window.innerWidth <= 1199 ? slider.destroy() : slider.init();
-// };
-
-window.addEventListener('resize', () => {
-  initAdvantagesSwiper();
-  // mountSwiper(initAdvantagesSwiper);
-});
 
 initHeroSwiper();
 initToursSwiper();

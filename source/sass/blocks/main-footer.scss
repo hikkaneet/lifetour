@@ -1,14 +1,28 @@
 .main-footer {
   flex-grow: 0;
   flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background: rgba(45, 56, 63, 0.2);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-footer__container {
   display: flex;
   flex-direction: column;
-  padding: 31px 9% 30px;
-  border-top: 1px solid rgba(45, 56, 63, 0.2);
-  box-sizing: border-box;
+  padding: 30px calc(8% + 5px) 30px;
+  max-width: $bp-max-limiter;
+  margin: 0 auto;
+  box-sizing: content-box;
 
   @media (max-width: $bp-tablet-only) {
     padding: 44px 6% 40px;
@@ -16,7 +30,7 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 30px 5%;
+    padding: 30px 6%;
   }
 }
 
@@ -34,9 +48,12 @@
 
 .main-footer__logo {
   & svg {
+    width: 205px;
+    height: 60px;
+
     @media (max-width: $bp-tablet-only) {
-      width: 144px;
-      height: 44px;
+      width: 118px;
+      height: 34px;
     }
 
     @media (max-width: $bp-mobile-only) {
@@ -61,6 +78,7 @@
 }
 
 .main-footer__menu {
+  margin: -4px 0 0 -64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,14 +86,15 @@
   flex-wrap: wrap;
 
   @media (max-width: $bp-tablet-only) {
+    margin: -10px 2px 0 0;
     gap: 10px;
   }
 
   @media (max-width: $bp-mobile-only) {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 32px;
-    margin-top: 20px;
+    gap: 30px;
+    margin: 10px 0 0 -4px;
     width: 100%;
   }
 }
@@ -93,7 +112,7 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    gap: 15px;
+    gap: 9px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -127,7 +146,7 @@
 }
 
 .main-footer__social-list {
-  margin: 16px auto 0 auto;
+  margin: 10px auto 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -135,11 +154,11 @@
   width: fit-content;
 
   @media (max-width: $bp-tablet-only) {
-    margin: 37px auto 0 auto;
+    margin: 30px auto 0;
   }
 
   @media (max-width: $bp-mobile-only) {
-    margin: 30px auto 0 0;
+    margin: 26px auto 0 0;
   }
 }
 

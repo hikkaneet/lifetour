@@ -23,7 +23,7 @@ const attachMobileMenu = () => {
       mainHeaderContainer.classList.add('main-header__container--opened');
       menuToggleIconMenu.classList.add('visually-hidden');
       menuToggleIconCross.classList.remove('visually-hidden');
-      menuItems.forEach(item => {
+      menuItems.forEach((item) => {
         item.classList.remove('menu-item--light');
         item.classList.add('menu-item--dark');
       });
@@ -35,7 +35,7 @@ const attachMobileMenu = () => {
       mainHeaderContainer.classList.remove('main-header__container--opened');
       menuToggleIconMenu.classList.remove('visually-hidden');
       menuToggleIconCross.classList.add('visually-hidden');
-      menuItems.forEach(item => {
+      menuItems.forEach((item) => {
         item.classList.remove('menu-item--dark');
         item.classList.add('menu-item--light');
       });

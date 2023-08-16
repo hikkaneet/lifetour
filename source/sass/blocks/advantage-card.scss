@@ -4,18 +4,18 @@
   flex-direction: column;
   align-items: center;
   width: 380px;
+  background-color: $color-default-white;
   border: 1px solid rgba(2, 102, 193, 0.1);
   min-height: 330px;
 
   @media (max-width: $bp-tablet-only) {
     padding: 30px 20px;
-    width: 324px;
+    width: 100%;
     min-height: auto;
   }
 
   @media (max-width: $bp-mobile-only) {
     padding: 20px 10px;
-    width: 290px;
   }
 }
 
@@ -27,6 +27,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: $bp-tablet-only) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .advantage-card__title {
@@ -43,6 +53,7 @@
   }
 
   @media (max-width: $bp-mobile-only) {
+    margin: 23px 0 0;
     font-size: 14px;
     line-height: 14px;
   }

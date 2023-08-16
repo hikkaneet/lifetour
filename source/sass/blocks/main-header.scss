@@ -10,7 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 9%;
+  padding: 38px calc(8% + 5px);
+  max-width: $bp-max-limiter;
+  margin: 0 auto;
+  box-sizing: content-box;
 
   @media (max-width: $bp-tablet-only) {
     padding: 30px 6%;
@@ -73,6 +76,10 @@
     display: block;
   }
 
+  @media (max-width: $bp-mobile-only) {
+    margin: -16px 0 0 -1px;
+  }
+
   & .main-header__icon-menu svg {
     &:hover,
     &:focus {
@@ -105,19 +112,17 @@
 }
 
 .main-header__logo {
-  & svg {
-    @media (max-width: $bp-tablet-only) {
-      width: 118px;
-      height: 34px;
+  &:focus-visible {
+    outline: 0;
+    & svg {
+      fill: #1C3374;
     }
+  }
 
-    @media (max-width: $bp-mobile-only) {
-      width: 112px;
-      height: 34px;
-    }
+  & svg {
 
     &:hover,
-    &:focus {
+    &:focus{
       fill: #1C3374;
     }
 
@@ -129,6 +134,24 @@
       fill: #ffffff;
       opacity: 0.1;
     }
+
+    @media (max-width: $bp-tablet-only) {
+      width: 144px;
+      height: 44px;
+    }
+
+    @media (max-width: $bp-mobile-only) {
+      width: 112px;
+      height: 34px;
+    }
+  }
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 0 -100px 0 0;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 0;
   }
 }
 
@@ -144,7 +167,7 @@
 
   @media (max-width: $bp-mobile-only) {
     position: absolute;
-    top: 55px;
+    top: 57px;
     right: 5%;
     font-size: 14px;
     line-height: 14px;

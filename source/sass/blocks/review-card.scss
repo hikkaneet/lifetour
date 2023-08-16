@@ -1,15 +1,15 @@
 .review-card {
   padding: 20px 40px 20px 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   gap: 30px;
   max-width: 790px;
+  min-height: 293px;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   @media (max-width: $bp-tablet-only) {
     padding: 20px 30px 20px 20px;
     max-width: 560px;
+    min-height: 277px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -17,17 +17,24 @@
     padding: 20px;
     gap: 20px;
     max-width: 100%;
+    min-height: 466px;
   }
 }
 
 .review-card__photo {
   width: 100%;
   height: 100%;
+  min-width: 258px;
 
   & img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    background-color: #afafaf;
+  }
+
+  @media (max-width: $bp-tablet-only) {
+    min-width: 186px;
   }
 }
 
@@ -37,39 +44,51 @@
 }
 
 .review-card__review-text {
-  margin: 0;
+  margin: 14px 0 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 
-  &--more {
-    margin-top: 14px;
-  }
-
   @media (max-width: $bp-tablet-only) {
+    margin: 4px 0 0;
     font-size: 12px;
     line-height: 18px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 0;
+  }
+
+  &--more {
+    margin: 10px 0 0;
   }
 }
 
 .review-card__author-name {
-  margin: 24px 0 0;
+  margin: auto 0 0;
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
 
-  @media (max-width: $bp-mobile-only) {
-    margin: 15px 0 0;
+  @media (max-width: $bp-tablet-only) {
     font-size: 12px;
     line-height: 12px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 15px 0 0;
   }
 }
 
 .review-card__author-info {
-  margin: 8px 0 0;
+  margin: 8px 0 16px;
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 8px 0 0;
+  }
 }
 
 

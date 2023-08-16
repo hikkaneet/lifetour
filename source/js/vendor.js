@@ -4,144 +4,186 @@ import './vendor/focus-visible-polyfill';
 import './vendor/leaflet/leaflet';
 
 const initHeroSwiper = () => {
-  // eslint-disable-next-line
-  const heroSwiper = new Swiper('.hero__swiper', {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    pagination: {
-      el: '.hero__pagination',
-      clickable: true,
-    },
-    speed: 300,
-  });
+  const swiperElement = document.querySelector('.hero__swiper');
+  const paginationElement = document.querySelector('.hero__pagination');
+
+  if (swiperElement && paginationElement) {
+    // eslint-disable-next-line
+    const heroSwiper = new Swiper(swiperElement, {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: paginationElement,
+        clickable: true,
+      },
+      speed: 300,
+    });
+  }
 };
 
 const initToursSwiper = () => {
-  // eslint-disable-next-line
-  const heroSwiper = new Swiper('.nearest-tours__swiper', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+  const swiperElement = document.querySelector('.nearest-tours__swiper');
+  const nextButton = document.querySelector('.nearest-tours__button-next');
+  const prevButton = document.querySelector('.nearest-tours__button-prev');
+
+  if (swiperElement && nextButton && prevButton) {
+    // eslint-disable-next-line
+    const toursSwiper = new Swiper(swiperElement, {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 18,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      navigation: {
+        nextEl: nextButton,
+        prevEl: prevButton,
       },
-    },
-    navigation: {
-      nextEl: '.nearest-tours__button-next',
-      prevEl: '.nearest-tours__button-prev',
-    },
-  });
+    });
+  }
 };
 
 const initTrainingSwiper = () => {
-  // eslint-disable-next-line
-  const heroSwiper = new Swiper('.training__swiper', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+  const swiperElement = document.querySelector('.training__swiper');
+  const nextButton = document.querySelector('.training__button-next');
+  const prevButton = document.querySelector('.training__button-prev');
+
+  if (swiperElement && nextButton && prevButton) {
+    // eslint-disable-next-line
+    const trainingSwiper = new Swiper(swiperElement, {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
       },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+      navigation: {
+        nextEl: nextButton,
+        prevEl: prevButton,
       },
-    },
-    navigation: {
-      nextEl: '.training__button-next',
-      prevEl: '.training__button-prev',
-    },
-  });
+    });
+  }
 };
 
 const initReviewsSwiper = () => {
-  // eslint-disable-next-line
-  const heroSwiper = new Swiper('.reviews__swiper', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-      768: {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
+  const swiperElement = document.querySelector('.reviews__swiper');
+  const nextButton = document.querySelector('.reviews__button-next');
+  const prevButton = document.querySelector('.reviews__button-prev');
+
+  if (swiperElement && nextButton && prevButton) {
+    // eslint-disable-next-line
+    const reviewsSwiper = new Swiper(swiperElement, {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+        },
       },
-    },
-    navigation: {
-      nextEl: '.reviews__button-next',
-      prevEl: '.reviews__button-prev',
-    },
-  });
+      navigation: {
+        nextEl: nextButton,
+        prevEl: prevButton,
+      },
+    });
+  }
 };
 
 const initAdvantagesSwiper = () => {
-  const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  const advantagesSwiper = document.querySelector('.advantages__swiper');
+  const buttonNext = document.querySelector('.advantages__button-next');
+  const buttonPrev = document.querySelector('.advantages__button-prev');
 
-  if (viewportWidth > 1199) {
-    const advantagesSwiper = document.querySelector('.advantages__swiper');
-    const buttonNext = document.querySelector('.advantages__button-next');
-    const buttonPrev = document.querySelector('.advantages__button-prev');
+  if (advantagesSwiper && buttonNext && buttonPrev) {
+    // eslint-disable-next-line
+    const advantagesSwiper = new Swiper('.advantages__swiper', {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      loop: true,
+      centeredSlides: true,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.advantages__button-next',
+        prevEl: '.advantages__button-prev',
+      },
+    });
 
-    if (advantagesSwiper && buttonNext && buttonPrev) {
-      // eslint-disable-next-line
-      const heroSwiper = new Swiper('.advantages__swiper', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        loop: true,
-        centeredSlides: true,
-        autoHeight: true,
-        navigation: {
-          nextEl: '.advantages__button-next',
-          prevEl: '.advantages__button-prev',
-        },
-      });
+    if (window.innerWidth <= 1199) {
+      advantagesSwiper.destroy();
+    } else {
+      advantagesSwiper.init();
     }
+
   }
 };
 
 const initGallerySwiper = () => {
-  // eslint-disable-next-line
-  const heroSwiper = new Swiper('.photo-gallery__swiper', {
-    direction: 'horizontal',
-    slidesPerView: 'auto',
-    spaceBetween: 5,
-    centeredSlides: true,
-    navigation: {
-      nextEl: '.photo-gallery__button-next',
-      prevEl: '.photo-gallery__button-prev',
-    },
-  });
+  const gallerySwiper = document.querySelector('.photo-gallery__swiper');
+  const nextButton = document.querySelector('.photo-gallery__button-next');
+  const prevButton = document.querySelector('.photo-gallery__button-prev');
+
+  if (gallerySwiper && nextButton && prevButton) {
+    // eslint-disable-next-line
+    const gallerySwiper = new Swiper('.photo-gallery__swiper', {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      spaceBetween: 5,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.photo-gallery__button-next',
+        prevEl: '.photo-gallery__button-prev',
+      },
+    });
+    gallerySwiper.slideTo(2);
+  }
 };
 
 const initMap = () => {
-  // eslint-disable-next-line
-  let map = L.map('map').setView([55.774836, 37.632664], 15);
+  const mapElement = document.getElementById('map');
 
-  // eslint-disable-next-line
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }).addTo(map);
-
-  // eslint-disable-next-line
-  let pin = L.icon({
-    iconUrl: '../img/svg/pin-filled.svg',
-    iconSize: [16, 20],
-    iconAnchor: [8, 19],
-  });
-
-  // eslint-disable-next-line
-  L.marker([55.774836, 37.632664], {icon: pin}).addTo(map);
+  if (mapElement) {
+    // eslint-disable-next-line
+    const map = L.map('map').setView([55.774836, 37.632664], 15);
+    // eslint-disable-next-line
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+    // eslint-disable-next-line
+    const pin = L.icon({
+      iconUrl: '../img/svg/pin-filled.svg',
+      iconSize: [16, 20],
+      iconAnchor: [8, 19],
+    });
+    // eslint-disable-next-line
+    L.marker([55.774836, 37.632664], { icon: pin }).addTo(map);
+  }
 };
 
+// function mountSwiper = (slider) => {
+//   window.innerWidth <= 1199 ? slider.destroy() : slider.init();
+// };
+
+window.addEventListener('resize', () => {
+  initAdvantagesSwiper();
+  // mountSwiper(initAdvantagesSwiper);
+});
 
 initHeroSwiper();
 initToursSwiper();

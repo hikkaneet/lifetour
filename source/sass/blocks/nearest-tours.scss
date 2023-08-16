@@ -2,14 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 8%;
+  padding: 123px calc(8% + 5px) 20px;
+  position: relative;
+  overflow-x: clip;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 84px 7%;
+    padding: 88px calc(6% + 5px) 20px;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 66px 4%;
+    padding: 66px 5% 20px;
   }
 }
 
@@ -20,12 +22,21 @@
 }
 
 .nearest-tours__swiper {
-  margin: 58px 0 0;
+  margin: 54px 0 0;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 42px 0 0;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 28px 0 0;
+  }
 }
 
 .nearest-tours__link {
-  display: block;
-  margin: 52px auto 0 auto;
+  margin: 52px auto 0;
+  display: flex;
+  align-items: center;
   gap: 12px;
   font-size: 16px;
   font-weight: 700;
@@ -35,17 +46,64 @@
   width: fit-content;
 
   @media (max-width: $bp-mobile-only) {
+    margin: 29px auto 0;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
   }
 }
 
+.nearest-tours__bg {
+  position: absolute;
 
+  &--left {
+    left: 0;
+    top: 502px;
 
+    @media (max-width: $bp-tablet-only) {
+      display: none;
+    }
+  }
 
+  &--right {
+    right: 0;
+    top: -18px;
 
+    @media (max-width: $bp-tablet-only) {
+      right: -307px;
+      top: -95px;
+    }
 
+    @media (max-width: $bp-mobile-only) {
+      width: 346px;
+      height: 595px;
+      right: -170px;
+      top: 138px;
+    }
+  }
+}
+
+.nearest-tours__title {
+  @media (max-width: $bp-tablet-only) {
+    margin: 0 0 0 -6px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 0;
+  }
+}
+
+.nearest-tours__buttons-wrapper {
+  @media (max-width: $bp-tablet-only) {
+    top: -5px;
+    right: -7px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    top: 6px;
+    right: 0;
+  }
+}
 
 
 

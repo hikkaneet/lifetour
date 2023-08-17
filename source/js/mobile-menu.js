@@ -7,8 +7,9 @@ const attachMobileMenu = () => {
   let menuToggleIconCross = document.querySelector('.main-header__icon-cross');
   let menuItems = document.querySelectorAll('.menu-item');
   let mainHeaderPhone = document.querySelector('.main-header__phone');
+  let pageContainer = document.querySelector('.page__container');
 
-  if (!mainHeaderContainer || !mainNavigation || !menuToggle || !menuToggleIconMenu || !menuToggleIconCross || !mainHeaderPhone) {
+  if (!mainHeaderContainer || !mainNavigation || !menuToggle || !menuToggleIconMenu || !menuToggleIconCross || !mainHeaderPhone || !pageContainer) {
     return;
   }
 
@@ -23,6 +24,7 @@ const attachMobileMenu = () => {
       mainHeaderContainer.classList.add('main-header__container--opened');
       menuToggleIconMenu.classList.add('visually-hidden');
       menuToggleIconCross.classList.remove('visually-hidden');
+      pageContainer.classList.add('page__container--overlay');
       menuItems.forEach((item) => {
         item.classList.remove('menu-item--light');
         item.classList.add('menu-item--dark');
@@ -35,6 +37,7 @@ const attachMobileMenu = () => {
       mainHeaderContainer.classList.remove('main-header__container--opened');
       menuToggleIconMenu.classList.remove('visually-hidden');
       menuToggleIconCross.classList.add('visually-hidden');
+      pageContainer.classList.remove('page__container--overlay');
       menuItems.forEach((item) => {
         item.classList.remove('menu-item--dark');
         item.classList.add('menu-item--light');

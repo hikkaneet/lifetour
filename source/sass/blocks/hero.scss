@@ -59,6 +59,8 @@
   font-size: 77px;
   font-weight: 800;
   line-height: 77px;
+  max-height: 154px;
+  overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
     padding: 0;
@@ -83,6 +85,8 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
+  max-height: 144px;
+  overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
     margin: 15px 0 0;
@@ -165,6 +169,9 @@
   margin: 36px 0 0;
   padding: 20px 52px;
   width: fit-content;
+  max-width: 654px;
+  max-height: 74px;
+  overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
     display: block;
@@ -188,6 +195,8 @@
   flex-wrap: wrap;
   gap: 10px;
   max-width: 40%;
+  max-height: 98px;
+  overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
     display: none;

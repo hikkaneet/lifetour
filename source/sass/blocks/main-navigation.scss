@@ -11,15 +11,15 @@
       left: 0;
       width: 100%;
       background-color: $color-default-white;
+    }
 
-      & .main-navigation__list {
-        flex-direction: column;
-      }
+    & .main-navigation__list {
+      flex-direction: column;
+    }
 
-      & .main-navigation__link {
-        color: $color-elephant;
-        width: fit-content;
-      }
+    & .main-navigation__link {
+      color: $color-elephant;
+      width: fit-content;
     }
   }
 }

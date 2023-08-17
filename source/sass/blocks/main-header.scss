@@ -160,6 +160,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  min-width: fit-content;
 
   @media (max-width: $bp-tablet-only) {
     font-size: 16px;

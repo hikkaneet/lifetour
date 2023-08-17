@@ -13,12 +13,12 @@
   top: 0;
   left: 0;
   z-index: 1;
+  background-color: #789caf;
 
   & img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    background-color: #afafaf;
   }
 }
 

@@ -2621,12 +2621,13 @@ button,
   gap: 22px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto;
+  max-width: 580px;
 }
 @media (max-width: 1199px) {
   .main-footer__menu {
     margin: -10px 2px 0 0;
     gap: 10px;
+    max-width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -4025,6 +4026,7 @@ button,
     padding: 0 20% 0 0;
     font-size: 14px;
     line-height: 22px;
+    max-height: 44px;
   }
   .training__learning-item::before {
     bottom: -24px;
@@ -4043,6 +4045,9 @@ button,
     font-size: 12px;
     line-height: 18px;
     padding: 0 16% 0 12%;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
   }
   .training__learning-item::before {
     bottom: 50%;
@@ -4624,6 +4629,9 @@ button,
     padding: 30px 20px;
     width: 100%;
     min-height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media (max-width: 767px) {

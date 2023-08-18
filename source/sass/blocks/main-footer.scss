@@ -50,7 +50,7 @@
   &:focus-visible {
     outline: 0;
   }
-  
+
   &:hover,
   &:focus {
     & svg {
@@ -94,11 +94,12 @@
   align-items: center;
   gap: 22px;
   flex-wrap: wrap;
-  margin: 0 auto;
+  max-width: 580px;
 
   @media (max-width: $bp-tablet-only) {
     margin: -10px 2px 0 0;
     gap: 10px;
+    max-width: 100%;
   }
 
   @media (max-width: $bp-mobile-only) {

@@ -190,6 +190,7 @@
     padding: 0 20% 0 0;
     font-size: 14px;
     line-height: 22px;
+    max-height: 44px;
 
     &::before {
       bottom: -24px;
@@ -210,6 +211,7 @@
     font-size: 12px;
     line-height: 18px;
     padding: 0 16% 0 12%;
+    max-height: fit-content;
 
     &::before {
       bottom: 50%;

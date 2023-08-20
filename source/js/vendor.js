@@ -21,10 +21,10 @@ const initHeroSwiper = () => {
       /* eslint-disable */
       on: {
         init: function () {
-          updateFocus(this.realIndex);
+          updateFocus(this.realIndex + 1);
         },
         slideChange: function () {
-          updateFocus(this.realIndex);
+          updateFocus(this.realIndex + 1);
         },
       },
       /* eslint-enable */

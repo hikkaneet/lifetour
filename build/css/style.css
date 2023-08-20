@@ -2222,10 +2222,16 @@ button,
     padding: 30px 6%;
     position: relative;
   }
+  .main-header__container--opened {
+    padding: 30px 6% 60px;
+  }
 }
 @media (max-width: 767px) {
   .main-header__container {
     padding: 15px 5%;
+  }
+  .main-header__container--opened {
+    padding: 15px 5% 60px;
   }
 }
 .main-header__container--no-js button {
@@ -2240,6 +2246,9 @@ button,
 .main-header__container--no-js .main-header__phone {
   color: #2d383f;
   z-index: 2;
+}
+.main-header__container--opened {
+  background-color: #ffffff;
 }
 .main-header__container--opened button {
   z-index: 2;
@@ -2370,8 +2379,8 @@ button,
   .main-navigation--no-js, .main-navigation--opened {
     display: block;
     position: absolute;
-    padding: 124px calc(5% + 2px) 70px;
-    top: 0;
+    padding: 0 calc(5% + 2px) 70px;
+    top: 124px;
     left: 0;
     width: 100%;
     background-color: #ffffff;
@@ -2398,7 +2407,8 @@ button,
 }
 @media (max-width: 767px) {
   .main-navigation--no-js, .main-navigation--opened {
-    padding: 96px 3% 48px;
+    padding: 0 3% 48px;
+    top: 96px;
   }
   .main-navigation .main-navigation__list {
     gap: 16px;

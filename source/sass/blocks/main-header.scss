@@ -18,10 +18,18 @@
   @media (max-width: $bp-tablet-only) {
     padding: 30px 6%;
     position: relative;
+
+    &--opened {
+      padding: 30px 6% 60px;
+    }
   }
 
   @media (max-width: $bp-mobile-only) {
     padding: 15px 5%;
+
+    &--opened {
+      padding: 15px 5% 60px;
+    }
   }
 
   &--no-js {
@@ -44,6 +52,8 @@
   }
 
   &--opened {
+    background-color: $color-default-white;
+
     & button {
       z-index: 2;
     }

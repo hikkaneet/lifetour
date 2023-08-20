@@ -10,8 +10,8 @@
     &--opened {
       display: block;
       position: absolute;
-      padding: 124px calc(5% + 2px) 70px;
-      top: 0;
+      padding: 0 calc(5% + 2px) 70px;
+      top: 124px;
       left: 0;
       width: 100%;
       background-color: $color-default-white;
@@ -40,7 +40,8 @@
   @media (max-width: $bp-mobile-only) {
     &--no-js,
     &--opened {
-      padding: 96px 3%  48px;
+      padding: 0 3% 48px;
+      top: 96px;
     }
 
     & .main-navigation__list {

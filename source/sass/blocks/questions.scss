@@ -82,6 +82,8 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+  max-height: 96px;
+  overflow: auto;
 
   @media (max-width: $bp-tablet-only) {
     margin: 20px 0 0;

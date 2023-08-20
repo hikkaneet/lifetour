@@ -7,6 +7,7 @@
   background-color: $color-default-white;
   border: 1px solid rgba(2, 102, 193, 0.1);
   min-height: 330px;
+  height: auto;
 
   @media (max-width: $bp-tablet-only) {
     padding: 30px 20px;

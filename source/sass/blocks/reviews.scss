@@ -15,6 +15,11 @@
   max-width: $bp-max-limiter;
   margin: 0 auto;
   position: relative;
+
+  @media (min-width: 2599px) {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .reviews__buttons-wrapper {

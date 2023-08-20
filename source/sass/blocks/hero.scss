@@ -9,7 +9,7 @@
 
   @media (max-width: $bp-tablet-only) {
     height: 1024px;
-    padding: 174px 13% 90px;
+    padding: 174px 6% 90px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -54,12 +54,12 @@
   z-index: 3;
   margin: 0;
   display: block;
-  padding: 0 30% 0 0;
+  padding: 0 18vw 0 0;
   color: $color-default-white;
   font-size: 77px;
   font-weight: 800;
   line-height: 77px;
-  max-height: 154px;
+  max-height: 231px;
   overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
@@ -67,6 +67,7 @@
     font-size: 56px;
     line-height: 56px;
     text-align: center;
+    max-height: 168px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -80,18 +81,20 @@
   z-index: 3;
   margin: 24px 0 0;
   display: block;
-  padding: 0 62% 0 0;
+  padding: 0;
   color: $color-default-white;
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
   max-height: 144px;
-  overflow: hidden;
+  overflow: auto;
+  width: 40%;
 
   @media (max-width: $bp-tablet-only) {
     margin: 15px 0 0;
-    padding: 0 10%;
+    padding: 0 16%;
     text-align: center;
+    width: 100%;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -104,7 +107,7 @@
 .hero__video {
   width: fit-content;
   position: absolute;
-  top: 35%;
+  top: 34%;
   left: calc(60% - 2px);
   background-color: #85776d;
 
@@ -130,7 +133,7 @@
     position: relative;
     top: 0;
     left: 0;
-    margin: 50px 0 0;
+    margin: 34px 0 0;
     justify-content: center;
   }
 
@@ -143,14 +146,14 @@
   margin: 94px 0 0 -175px;
 
   @media (max-width: $bp-tablet-only) {
-    margin: 56px 0 0 -68px;
+    margin: 53px 0 0 -64px;
   }
 }
 
 .hero__audio {
   position: absolute;
-  top: 35%;
-  left: 70%;
+  top: 34%;
+  left: calc(72% - 4px);
   z-index: 3;
 
   @media (max-width: $bp-tablet-only) {
@@ -169,12 +172,13 @@
   margin: 36px 0 0;
   padding: 20px 52px;
   width: fit-content;
-  max-width: 654px;
   max-height: 74px;
+  max-width: 436px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
-    display: block;
     margin: 25px auto 0;
     padding: 20px 46px;
   }
@@ -222,6 +226,7 @@
   justify-content: space-between;
   max-width: $bp-max-limiter;
   height: 100%;
+  width: 100%;
 }
 
 .hero__container {

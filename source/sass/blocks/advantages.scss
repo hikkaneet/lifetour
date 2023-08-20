@@ -16,6 +16,11 @@
   position: relative;
   max-width: $bp-max-limiter;
   margin: 0 auto;
+
+  @media (min-width: 2599px) {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .advantages__buttons-wrapper {
@@ -52,11 +57,6 @@
     gap: 30px;
     justify-items: center;
 
-    & .advantages__slide:last-child {
-      grid-column: span 2;
-      width: calc(100% / 2 - 15px);
-    }
-
     @media (max-width: $bp-tablet-only) {
       gap: 28px;
     }
@@ -65,11 +65,6 @@
   @media (max-width: $bp-mobile-only) {
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
-
-    & .advantages__slide:last-child {
-      grid-column: auto;
-      width: 100%;
-    }
   }
 }
 
@@ -88,5 +83,14 @@
 
   @media (max-width: $bp-tablet-only) {
     display: none;
+  }
+}
+
+.advantages__slide {
+  &--wide {
+    @media (max-width: $bp-tablet-only) {
+      grid-column: span 2;
+      width: calc(100% / 2 - 15px);
+    }
   }
 }

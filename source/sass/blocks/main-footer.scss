@@ -94,7 +94,7 @@
   align-items: center;
   gap: 22px;
   flex-wrap: wrap;
-  max-width: 580px;
+  max-width: 600px;
 
   @media (max-width: $bp-tablet-only) {
     margin: -10px 2px 0 0;
@@ -126,7 +126,9 @@
   @media (max-width: $bp-mobile-only) {
     gap: 9px;
     display: grid;
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 29%;
   }
 }
 
@@ -148,10 +150,16 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  min-width: fit-content;
+  max-height: 110px;
+  max-width: 144px;
+  overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
     display: none;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    max-height: 55px;
   }
 }
 

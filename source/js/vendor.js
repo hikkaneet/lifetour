@@ -18,9 +18,34 @@ const initHeroSwiper = () => {
         clickable: true,
       },
       speed: 300,
+      /* eslint-disable */
+      on: {
+        init: function () {
+          updateFocus(this.realIndex);
+        },
+        slideChange: function () {
+          updateFocus(this.realIndex);
+        },
+      },
+      /* eslint-enable */
     });
   }
 };
+
+function updateFocus(index) {
+  const slides = document.querySelectorAll('.hero__slide');
+
+  slides.forEach((slide, i) => {
+    const elementsToFocus = slide.querySelectorAll('a, button');
+    elementsToFocus.forEach((element) => {
+      if (i === index) {
+        element.removeAttribute('tabindex');
+      } else {
+        element.setAttribute('tabindex', '-1');
+      }
+    });
+  });
+}
 
 const initToursSwiper = () => {
   const swiperElement = document.querySelector('.nearest-tours__swiper');
@@ -120,7 +145,6 @@ const initAdvantagesSwiper = () => {
         spaceBetween: 30,
         loop: true,
         centeredSlides: true,
-        autoHeight: true,
         navigation: {
           nextEl: '.advantages__button-next',
           prevEl: '.advantages__button-prev',
@@ -160,7 +184,7 @@ const initGallerySwiper = () => {
         prevEl: '.photo-gallery__button-prev',
       },
     });
-    gallerySwiper.slideTo(2);
+    // gallerySwiper.slideTo(2);
   }
 };
 

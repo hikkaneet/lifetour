@@ -1,6 +1,6 @@
 .audio-player {
   padding: 40px;
-  width: 320px;
+  width: 340px;
   height: 220px;
   background-color: rgba(245, 246, 250, 0.9);
   display: flex;
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 260px;
 }
 
 .audio-player__track-info {
@@ -86,13 +86,13 @@
 }
 
 .audio-player__control {
-  margin: 16px 0 0;
+  margin: auto 0 0;
 }
 
 .audio-player__main-buttons {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 }
 
 .audio-player__play-button {
@@ -101,6 +101,8 @@
   cursor: pointer;
   border: 0;
   background: 0;
+  position: relative;
+  z-index: 4;
 }
 
 .audio-player__top-buttons {

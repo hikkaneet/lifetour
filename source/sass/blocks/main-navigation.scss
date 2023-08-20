@@ -1,25 +1,57 @@
 .main-navigation {
+  max-height: 110px;
+  overflow-y: auto;
+
   @media (max-width: $bp-tablet-only) {
     display: none;
+    max-height: none;
 
     &--no-js,
     &--opened {
       display: block;
       position: absolute;
-      padding: 124px 6% 70px;
+      padding: 124px calc(5% + 2px) 70px;
       top: 0;
       left: 0;
       width: 100%;
       background-color: $color-default-white;
+      overflow: auto;
+      max-height: 100vh;
     }
 
     & .main-navigation__list {
       flex-direction: column;
+      gap: 19px;
     }
 
     & .main-navigation__link {
       color: $color-elephant;
       width: fit-content;
+    }
+
+    & .main-header__menu-toggle {
+      & svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    &--no-js,
+    &--opened {
+      padding: 96px 3%  48px;
+    }
+
+    & .main-navigation__list {
+      gap: 16px;
+    }
+
+    & .main-header__menu-toggle {
+      & svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

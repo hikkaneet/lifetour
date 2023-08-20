@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {attachMobileMenu} from './mobile-menu';
 import {attachVideoPlayer} from './iframe-video';
 import {attachAudioPlayer} from './iframe-audio';
+import {updateAdvantagesSlides} from './advantage-card-checker';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   attachMobileMenu();
   attachVideoPlayer();
   attachAudioPlayer();
+  updateAdvantagesSlides();
 
   // Utils
   // ---------------------------------

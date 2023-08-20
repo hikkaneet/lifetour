@@ -160,7 +160,9 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  min-width: fit-content;
+  max-height: 110px;
+  max-width: 212px;
+  overflow: hidden;
 
   @media (max-width: $bp-tablet-only) {
     font-size: 16px;
@@ -173,5 +175,6 @@
     right: 5%;
     font-size: 14px;
     line-height: 14px;
+    max-height: 55px;
   }
 }

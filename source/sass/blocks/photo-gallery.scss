@@ -14,6 +14,11 @@
 .photo-gallery__container {
   max-width: $bp-max-limiter;
   margin: 0 auto;
+
+  @media (min-width: 2599px) {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .photo-gallery__swiper {

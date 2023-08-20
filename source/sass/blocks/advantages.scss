@@ -85,12 +85,3 @@
     display: none;
   }
 }
-
-.advantages__slide {
-  &--wide {
-    @media (max-width: $bp-tablet-only) {
-      grid-column: span 2;
-      width: calc(100% / 2 - 15px);
-    }
-  }
-}

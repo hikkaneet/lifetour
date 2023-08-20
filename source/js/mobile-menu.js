@@ -4,7 +4,7 @@ const attachMobileMenu = () => {
   const menuToggle = document.querySelector('.main-header__menu-toggle');
   const menuToggleIconMenu = document.querySelector('.main-header__icon-menu');
   const menuToggleIconCross = document.querySelector('.main-header__icon-cross');
-  const menuItems = document.querySelectorAll('.menu-item');
+  const menuItems = document.querySelectorAll('.main-navigation__link');
   const mainHeaderPhone = document.querySelector('.main-header__phone');
   const pageContainer = document.querySelector('.page__container');
   const body = document.body;

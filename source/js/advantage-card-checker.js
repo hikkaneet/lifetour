@@ -1,6 +1,6 @@
 const updateAdvantagesSlides = () => {
   const wrapper = document.querySelector('.advantages__swiper-wrapper');
-  const slides = wrapper.querySelectorAll('.advantages__slide');
+  const slides = wrapper.querySelectorAll('.advantage-card');
 
   if (!wrapper || !slides.length) {
     return;
@@ -10,12 +10,12 @@ const updateAdvantagesSlides = () => {
 
   if (windowWidth >= 767 && windowWidth <= 1199) {
     if (slides.length % 2 !== 0) {
-      slides[slides.length - 1].classList.add('advantages__slide--wide');
+      slides[slides.length - 1].classList.add('advantage-card--wide');
     } else {
-      slides[slides.length - 1].classList.remove('advantages__slide--wide');
+      slides[slides.length - 1].classList.remove('advantage-card--wide');
     }
   } else {
-    slides[slides.length - 1].classList.remove('advantages__slide--wide');
+    slides[slides.length - 1].classList.remove('advantage-card--wide');
   }
 };
 

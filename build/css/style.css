@@ -4687,14 +4687,6 @@ button,
   }
 }
 
-@media (max-width: 1199px) {
-  .advantages__slide--wide {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-    width: calc(50% - 15px);
-  }
-}
-
 .advantage-card {
   padding: 40px 20px;
   display: -webkit-box;
@@ -4715,7 +4707,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantage-card {
-    padding: 30px 20px;
+    padding: 30px 18px;
     width: 100%;
     min-height: auto;
     height: -webkit-fit-content;
@@ -4726,6 +4718,19 @@ button,
 @media (max-width: 767px) {
   .advantage-card {
     padding: 20px 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .advantage-card--wide {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .advantage-card--wide {
+    grid-column: auto;
+    width: 100%;
   }
 }
 
@@ -5356,7 +5361,7 @@ button,
 }
 
 .contacts__map-wrapper {
-  margin: 98px 0 0;
+  margin: 72px 0 0;
   width: 100%;
   height: 100%;
   min-height: 324px;

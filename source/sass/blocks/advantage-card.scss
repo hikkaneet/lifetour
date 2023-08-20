@@ -10,7 +10,7 @@
   height: auto;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 30px 20px;
+    padding: 30px 18px;
     width: 100%;
     min-height: auto;
     height: fit-content;
@@ -18,6 +18,18 @@
 
   @media (max-width: $bp-mobile-only) {
     padding: 20px 10px;
+  }
+
+  &--wide {
+    @media (max-width: $bp-tablet-only) {
+      grid-column: span 2;
+      width: calc(100% / 2 - 15px);
+    }
+
+    @media (max-width: $bp-mobile-only) {
+      grid-column: auto;
+      width: 100%;
+    }
   }
 }
 
